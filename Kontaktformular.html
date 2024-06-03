@@ -1,0 +1,48 @@
+{% extends "Basis.html" %}
+
+{% block title %}Kontaktformular - Omnibus Stütz{% endblock %}
+
+{% block content %}
+
+<section class="contact-form">
+  <h2>Kontaktformular</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="anrede">Anrede:</label>
+      <select id="anrede" name="anrede" required>
+        <option value="">-- Bitte Auswählen --</option>
+        <option value="Herr">Herr</option>
+        <option value="Frau">Frau</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="name">Vollständiger Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Geben Sie Ihren vollständigen Namen an...">
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail Adresse:</label>
+      <input type="email" id="email" name="email" required placeholder="Geben sie ihre E-Mailadresse an...">
+    </div>
+    <div class="form-group">
+      <label for="address">Addresse:</label>
+      <input type="text" id="address" name="address" required placeholder="Geben Sie Ihre Adresse an...">
+    </div>
+    <div class="form-group">
+      <label for="subject">Betreff:</label>
+      <input id="subject" name="subject" required placeholder="Geben Sie Ihren Betreff ein..."></input>
+    </div>
+    <div class="form-group">
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" required placeholder="Geben Sie Ihre Nachricht ein..."></textarea>
+      <div class="form-group">
+        <label for="Datenschutz">Datenschutz:</label>
+        <select id="Datenschutz" name="anrede" required>
+          <option value="">-- Datenschutz --</option>
+          <option value="Herr">Akzeptiert</option>
+        </select>
+      </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+{% endblock %}

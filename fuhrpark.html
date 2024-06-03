@@ -1,0 +1,25 @@
+{% extends "Basis.html" %}
+
+{% block title %}Unser Fuhrpark - Omnibus Stütz{% endblock %}
+
+{% block content %}
+<section class="fuhrpark">
+    <h2>Nachstehend eine Auswahl unserer Fahrzeuge:</h2>
+    <div class="vehicle">
+        <img src="{{ url_for('static', filename='Neoplan Cityliner.jpg') }}" alt="Neoplan Cityliner">
+        <p>Neoplan Cityliner - Erstzulassung 2019</p>
+    </div>
+    <div class="vehicle">
+        <img src="{{ url_for('static', filename='MAN Lions Intercity.jpg') }}" alt="MAN Lion's Intercity">
+        <p>MAN Lion's Intercity - Erstzulassung 2021</p>
+    </div>
+    <div class="vehicle">
+        <img src="{{ url_for('static', filename='ProBus RL.jpg') }}" alt="ProBus RL">
+        <p>ProBus R/L - Erstzulassung 2022</p>
+    </div>
+    <div class="vehicle">
+        <img src="{{ url_for('static', filename='Ford Transit.jpg') }}" alt="Ford Transit">
+        <p>Ford Transit - Erstzulassung 2024</p>
+    </div>
+</section>
+{% endblock %}

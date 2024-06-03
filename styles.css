@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* Adjust alignment as needed */
+    padding: 1rem;
+    /* Adjust padding as needed */
+}
+
+.custom-link-color {
+    color: white;
+    /* Change this to your desired color */
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #005b96;
+    color: white;
+}
+
+header .logo {
+    height: 80px;
+}
+
+header .contact-info p {
+    margin: 0;
+}
+
+nav {
+    background: #003366;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    /* Change to column for mobile */
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+    /* Add some spacing between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+    /* Apply flex-row for larger screens */
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 5rem 1rem;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.service,
+.fleet {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2,
+.fleet h2 {
+    margin-bottom: 1rem;
+}
+
+.service ul {
+    list-style: none;
+    text-align: left;
+}
+
+.service ul li {
+    margin-bottom: 1rem;
+}
+
+.service ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.vehicle {
+    margin-bottom: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 100px;
+}
+
+.vehicle img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    padding-inline: 12px;
+}
+
+.contact-form {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #005b96;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-group select {
+    width: 100%;
+    /* Match the width of other form elements */
+    padding: 10px;
+    /* Consistent padding with other fields */
+    border: 1px solid #ccc;
+    /* Border to match other fields */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    font-size: 16px;
+    /* Consistent font size */
+    background-color: white;
+    /* Set background color */
+    cursor: pointer;
+    /* Indicate interactivity */
+}
+
+.form-group option {
+    padding: 5px 10px;
+    /* Adjust padding if needed */
+    background-color: #fff;
+    /* Option background color */
+}
+
+.form-group option:hover {
+    background-color: #f0f0f0;
+    /* Highlight on hover */
+}
