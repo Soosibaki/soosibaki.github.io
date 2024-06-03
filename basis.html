@@ -17,12 +17,12 @@
 
   <nav>
     <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/service.html">Unser Service</a></li>
-      <li><a href="/fuhrpark.html">Unser Fuhrpark</a></li>
-      <li><a href="/kontaktformular.html">Kontaktformular</a></li>
-      <li><a href="/impressum.html">Impressum</a></li>
-      <li><a href="/datenschutz.html">Datenschutzerklärung</a></li>
+      <li><a href="{{ url_for(filename='index.html') }}">Home</a></li>
+      <li><a href="{{ url_for(filename='service.html') }}">Unser Service</a></li>
+      <li><a href="{{ url_for(filename='fuhrpark.html') }}">Unser Fuhrpark</a></li>
+      <li><a href="{{ url_for(filename='kontaktformular.html') }}">Kontaktformular</a></li>
+      <li><a href="{{ url_for(filename='impressum.html') }}">Impressum</a></li>
+      <li><a href="{{ url_for(filename='datenschutz.html') }}">Datenschutzerklärung</a></li>
     </ul>
   </nav>
 
