@@ -1,8 +1,40 @@
-{% extends "Basis.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Omnibus Stütz{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Omnibus Stütz" class="logo">
+    <div class="contact-info">
+      <h1><a href="https://maps.app.goo.gl/KRv462G8y7hcSFP79" style="text-decoration: none;" class="custom-link-color">Omnibusunternehmen</a></h1>
+      <h2><a href="https://maps.app.goo.gl/KRv462G8y7hcSFP79" style="text-decoration: none;" class="custom-link-color">Wüstenbuch 5, 96132 Schlüsselfeld</a></h2>
+    </div>
+  </header>
 
-{% block title %}Home - Omnibus Stütz{% endblock %}
+  <nav>
+    <ul>
+      <li><a href="{{ url_for(filename='index.html') }}">Home</a></li>
+      <li><a href="{{ url_for(filename='service.html') }}">Unser Service</a></li>
+      <li><a href="{{ url_for(filename='fuhrpark.html') }}">Unser Fuhrpark</a></li>
+      <li><a href="{{ url_for(filename='kontaktformular.html') }}">Kontaktformular</a></li>
+      <li><a href="{{ url_for(filename='impressum.html') }}">Impressum</a></li>
+      <li><a href="{{ url_for(filename='datenschutz.html') }}">Datenschutzerklärung</a></li>
+    </ul>
+  </nav>
 
-{% block content %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="sticky-footer">
+    <p> <a href="datenschutz" class="custom-link-color">&copy; Omnibus Stütz</a></p>
+  </footer>
+</body>
+</html>
 <section class="hero">
     <h1>Herzlich willkommen bei Omnibus Stütz</h1>
     <p>Egal, wo Ihr Ziel ist, starten können Sie mit einem Anruf bei uns: 09555/581</p>
@@ -10,4 +42,3 @@
         <source src="/video.mp4" type="video/mp4">
       </video>
 </section>
-{% endblock %}
